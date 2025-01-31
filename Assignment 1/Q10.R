@@ -1,16 +1,14 @@
-seq<- 6:12
-print(seq)
 
-rep_val <- rep(5.3,3)
-print(rep_val)
+vec <- c(seq(3, 6, length.out = 5), rep(c(2, -5.1, -33), 2), 7/42 + 2)
+print(vec)
+obj <- c(vec[1], vec[length(vec)])
 
-num<- -3
-print(num)
+print(obj)
+omit_obj <- vec[-c(1, length(vec))]
 
-prev_vec_length<- length(c(seq,rep_val, num))
+print(omit_obj)
+reconstructed_vec <- c(obj[1], omit_obj, obj[2])
 
 
-seq2 <- seq(102, prev_vec_length, length.out=9)
-
-final_vec <- c(seq, rep_val, num,seq2)
-print(final_vec)
+vec <- sort(reconstructed_vec)
+print(vec)
