@@ -1,0 +1,6 @@
+val <- seq(from=4.8, to=0.1, length.out=48)
+aray_3d<- array(0,dim=c(4,2,6))
+for(i in 1:6){
+aray_3d[,,i]<- matrix(val[((i-1)*8+1):(i*8)], nrow=4, ncol=2)
+}
+print(aray_3d)
