@@ -19,4 +19,8 @@ basic_math_operations <- function(num){
     power <- num^3
     cat("Power:",power,"\n")
 
-}20
+}
+
+#for user i/p
+num <- as.numeric(readline("Enter No:"))
+basic_math_operations(num)
