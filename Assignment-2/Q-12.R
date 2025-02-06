@@ -6,5 +6,5 @@ print(array_3D)
 ext_val <- array_3D[c(4, 1), 2, ]
 print(ext_val)
 
-n_arr <- array(rep(extracted_values[2, ], each = 4), dim = c(2, 2, 2, 3))
+n_arr <- array(rep(ext_val[2, ], each = 4), dim = c(2, 2, 2, 3))
 print(n_arr)
